@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("hamburger.jpg");
+    background-size: cover;
+    -webkit-backdrop-filter: blur(6px);  
+    backdrop-filter: blur(6px); 
+    box-shadow: inset 200px 200px 300px 200px rgba(255,255,255,0.08); 
+    height: 1000px;
+    color:white;
+    overflow: hidden;
+  }
+
+ h1{
+    color:black;
+    font-weight: bold;
+    font-size: 40px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+ }
+  header, footer {
+    background-color: #f9f9f9;
+    padding: 20px;
+    height:75px;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  .menu {
+    display: flex;
+    justify-content:flex-start;
+    margin-left:10px;
+    gap:5px;
+    font-weight:bold;
+    font-size: 20px;
+  }
+  
+  #orderButton {
+    padding: 10px 20px;
+    margin-top: 30px;
+    margin-left: 250px;
+    background-color: #ff9900;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  #orderButton:hover {
+    background-color: #e68300;
+  }
+  
+  .orderStatus {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+  }
+  .stars-container.centered {
+    display: flex;
+    justify-content: center;
+  }
+  
+  @keyframes pulse {
+    0% {
+      opacity: 0.5;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.5;
+    }
+  }
+  
+  .loading::after {
+    content: 'Processing...';
+    display: inline-block;
+    margin-left: 10px;
+    animation: pulse 1.5s infinite ease-in-out;
+  }
+  .feedback-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    font-size: 30px;
+  }
+  
+  .star {
+    font-size: 24px;
+    margin-right: 5px;
+    cursor: pointer;
+    font-size: 26px;
+  }
+  
+  .star:hover,
+  .highlight {
+    color: #ffcc00;
+  }
+  @keyframes example {
+    from{
+     transform:scale(0.7);
+    }
+    to{
+     transform:scale(1.1);
+ 
+    }
+    
+ }
+  h1{
+     animation-name:example;
+     animation-duration:3s;
+     animation-iteration-count:infinite;
+     animation-timing-function: ease-in-out;
+ 
+ 
+  } 
+   
